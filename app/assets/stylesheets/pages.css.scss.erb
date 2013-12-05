@@ -17,7 +17,7 @@ body {
   margin-bottom: -16px;
   margin-left: 394px;
   .navlink {
-    width: 163px;
+    width: 161px;
     float: left;
     // border: 1px solid white;
   }
@@ -26,28 +26,28 @@ body {
     color: white;
     font-size: 20px;
     font-family: "TimesNewRoman", Serif;
-    font-style: italic;
+    
     font-weight: normal;
     text-align: center;
     width: 100%;
     text-align: center;
     text-decoration: none;
     opacity: 0.8;
-    text-shadow: 1px 1px 1px black;
-    border-bottom: 3px solid transparent;
+    text-shadow: 1px 1px 1px grey;
+    border-bottom: 1px solid transparent;
     transition: 0.2s;
     &:hover {
-      background-color: hsla(155, 100%, 45%, 0.34);
-      border-bottom: 3px solid turquoise;
+      border: 1px solid white;
+      margin-bottom: -1px;
       transition: 0.2s;
     }
   }
 }
 
 #home {
-  background-image: url(<%= asset_path 'cali_beach_crop_1440_dark.jpg' %>);
+  background-image: url(<%= asset_path 'cali_beach_light_1440.jpg' %>);
   width: 1440px;
-  height: 500px;
+  height: 960px;
 }
 
 .container {
