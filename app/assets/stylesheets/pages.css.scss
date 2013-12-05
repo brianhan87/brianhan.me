@@ -4,12 +4,42 @@
 
 body {
   margin: 0px;
-  margin-top: -25px;
+  margin-top: -16px;
   font-family: "HelveticaNeue", Sans-Serif;
   font-weight: bold;
 }
 
-#about {
+#nav {
+
+  float: left;
+  // background-color: #ccc;
+  width: 652px;
+  margin-top: 50px;
+  margin-bottom: -16px;
+  margin-left: 394px;
+  .navlink {
+    width: 163px;
+    // background-color: blue;
+    float: left;
+    // border: 1px solid white;
+  }
+  a {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-family: "TimesNewRoman", Serif;
+    font-style: italic;
+    font-weight: normal;
+    // background-color: grey;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+#home {
   background-image: url("cali_beach_crop_1440_dark.jpg");
   width: 1440px;
   height: 500px;
@@ -18,7 +48,7 @@ body {
 .container {
   // background-color: #ccc;
   float: left;
-  margin-top: 125px;
+  margin-top: 50px;
   margin-left: 394px;
   border: 6px solid white;
   width: 500px;
