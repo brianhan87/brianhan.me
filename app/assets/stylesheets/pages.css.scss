@@ -10,7 +10,6 @@ body {
 }
 
 #nav {
-
   float: left;
   // background-color: #ccc;
   width: 652px;
@@ -19,7 +18,6 @@ body {
   margin-left: 394px;
   .navlink {
     width: 163px;
-    // background-color: blue;
     float: left;
     // border: 1px solid white;
   }
@@ -30,12 +28,19 @@ body {
     font-family: "TimesNewRoman", Serif;
     font-style: italic;
     font-weight: normal;
-    // background-color: grey;
     text-align: center;
     width: 100%;
     text-align: center;
     text-decoration: none;
     opacity: 0.8;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+    &:hover {
+      background-color: hsla(155, 100%, 45%, 0.34);
+      border-bottom: 3px solid turquoise;
+      transition: 0.2s;
+    }
   }
 }
 
