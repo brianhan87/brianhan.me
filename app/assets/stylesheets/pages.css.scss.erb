@@ -100,13 +100,20 @@ and (min-width : 1640px) {
       font-style: italic;
       color: white;
       text-transform: uppercase;
+
       .koala.container {
         width: 100%;
-        // background-color: hsla(275, 100%, 3%, 0.53);
         padding-top: 4em;
         padding-bottom: 4em;
         text-align: center;
-        // background-color: #09000f;
+        transition: 0.3s;
+        &:hover {
+          background-color: hsla(275, 100%, 3%, 0.53);
+          background-color: #09000f;
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+        
         p {
           font-size: 1.1em;
         }
@@ -211,11 +218,9 @@ and (max-width : 1640px) {
       text-transform: uppercase;
       .koala.container {
         width: 100%;
-        // background-color: hsla(275, 100%, 3%, 0.53);
         padding-top: 4em;
         padding-bottom: 4em;
         text-align: center;
-        // background-color: #09000f;
         p {
           font-size: 1em;
         }
