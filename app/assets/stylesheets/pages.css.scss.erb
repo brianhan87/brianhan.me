@@ -14,19 +14,42 @@ hr {
   background-color: black;
 }
 
-/* Desktops and laptops ----------- */
+h1 {
+  opacity: 1;
+  // font-size: 70px;
+  font-size: 4.375em;
+  // background-color: white;
+  // margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  // background-color: blue;
+  // margin-top: 0;
+  margin: 0; 
+  padding: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "TimesNewRoman", Serif;
+  font-size: 20px;
+}
+
+/* Big Screens - Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1640px) {
 /* Styles */
+  .container {
+    float: left;
+  }
   #home {
     background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
     background-size: 100%, 100%;
     width: 100%;
     height: 59.5em;
     box-shadow: inset 0px -15px 50px #777777;
-    .home.container {
+    .home {
       background-color: white;
-      float: left;
       margin-top: 19.625em;
       // margin-left: 24.265em;
       margin-left: 28.33%;
@@ -40,9 +63,61 @@ and (min-width : 1640px) {
       opacity: 0.85;
     }
   }
+  #hello {
+    // background-color: #ccc;
+    float: left;
+    // width: 1440px;
+    width: 100%;
+    box-shadow: 0px 2px 20px #777777;
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 125%;
+      width: 50%;
+      height: 31.25em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        // background-color: hsla(275, 100%, 3%, 0.53);
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        // background-color: #09000f;
+        p {
+          font-size: 1.1em;
+        }
+        .letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 5em;
+          opacity: 0.85;
+        }
+      }
+    }
+
+    .about.container {
+      background-color: blue;
+      width: 50%;
+      text-align: left;
+    }
+
+    img.hello-koala {
+
+      float: left;
+      margin-top: 160px;
+      margin-left: 100px;
+      width: 365px;
+      height: 365px;
+      // border-radius: 50%;
+    }
+  }
 }
 
-/* Desktops and laptops ----------- */
+/* Small Screens - Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1434px)
 and (max-width : 1640px) {
@@ -291,213 +366,3 @@ and (max-width : 480px) {
     }
   }
 }
-
-
-.container {
-  background-color: white;
-  float: left;
-  margin-top: 250px;
-  margin-left: 394px;
-  // border: 6px solid white;
-  width: 500px;
-  text-align: left;
-  color: black;
-  padding: 70px;
-  opacity: 0.85;
-  h1 {
-    opacity: 1;
-    // font-size: 70px;
-    font-size: 4.375em;
-    // background-color: white;
-    // margin-bottom: 0;
-    margin: 0;
-    padding: 0;
-  }
-  h2 {
-    // background-color: blue;
-    // margin-top: 0;
-    margin: 0; 
-    padding: 0;
-    font-weight: normal;
-    font-style: italic;
-    font-family: "TimesNewRoman", Serif;
-    font-size: 20px;
-  }
-  h3 {
-    &.first-line {
-      font-weight: bold;
-    }
-    font-size: 25px;
-    font-weight: normal;
-  }
-
-  ul li {
-    font-weight: normal;
-  }
-}
-
-#about {
-  // background-color: #ccc;
-  float: left;
-  // width: 1440px;
-  width: 100%;
-  box-shadow: 0px 2px 20px #777777;
-
-  .about.container {
-    // background-color: blue;
-    float: left;
-    width: 480px;
-    margin-top: 0px;
-    margin-left: 100px;
-    text-align: right;
-}
-
-  img.hello-koala {
-
-    float: left;
-    margin-top: 160px;
-    margin-left: 100px;
-    width: 365px;
-    height: 365px;
-    border-radius: 50%;
-  }
-
-}
-
-// /* Desktops and laptops ----------- */
-// @media only screen 
-// and (min-width : 1440px) {
-//   body {
-//     margin: 0px;
-//     margin-top: -16px;
-//     font-family: "HelveticaNeue", Sans-Serif;
-//     font-weight: bold;
-//   }
-
-//   nav {
-//     float: left;
-//     width: 652px;
-//     margin-left: 394px;
-//   }
-
-//   hr {
-//     border: 0px;
-//     height: 1px;
-//     background-color: black;
-//   }
-
-
-//   #nav {
-//     float: left;
-//     background-color: #ccc;
-//     width: 652px;
-//     margin-top: 150px;
-//     margin-bottom: 0px;
-
-
-//     .navlink {
-//       width: 163px;
-//       float: left;
-//       background-color: blue;
-//       // border: 1px solid white;
-//     }
-//     a {
-//       float: left;
-//       color: black;
-//       font-size: 20px;
-//       font-family: "TimesNewRoman", Serif;
-//       font-weight: normal;
-//       text-align: center;
-//       width: 100%;
-//       text-align: center;
-//       text-decoration: none;
-//       opacity: 0.8;
-//       // text-shadow: 1px 1px 1px grey;
-//       transition: 0.2s;
-//       &:hover {
-//         background-color: white;
-//         transition: 0.2s;
-//         // width: 150px;
-//         // margin-left: 31px;
-//       }
-//     }
-//   }
-
-//   #home {
-//     background-image: url(<%= asset_path 'cali_beach_light_1440.jpg' %>);
-//     width: 1920px;
-//     height: 1080px;
-//     box-shadow: inset 0px -15px 50px #777777;
-
-//   }
-
-//   .container {
-//     background-color: white;
-//     float: left;
-//     margin-top: 250px;
-//     margin-left: 394px;
-//     // border: 6px solid white;
-//     width: 500px;
-//     text-align: left;
-//     color: black;
-//     padding: 70px;
-//     opacity: 0.85;
-//     h1 {
-//       opacity: 1;
-//       font-size: 70px;
-//       // background-color: white;
-//       // margin-bottom: 0;
-//       margin: 0;
-//       padding: 0;
-//     }
-//     h2 {
-//       // background-color: blue;
-//       // margin-top: 0;
-//       margin: 0; 
-//       padding: 0;
-//       font-weight: normal;
-//       font-style: italic;
-//       font-family: "TimesNewRoman", Serif;
-//       font-size: 20px;
-//     }
-//     h3 {
-//       &.first-line {
-//         font-weight: bold;
-//       }
-//       font-size: 25px;
-//       font-weight: normal;
-//     }
-
-//     ul li {
-//       font-weight: normal;
-//     }
-//   }
-
-//   #about {
-//     // background-color: #ccc;
-//     float: left;
-//     width: 1440px;
-//     box-shadow: 0px 2px 20px #777777;
-
-//     .about.container {
-//       // background-color: blue;
-//       float: left;
-//       width: 480px;
-//       margin-top: 0px;
-//       margin-left: 100px;
-//       text-align: right;
-//   }
-
-//     img.hello-koala {
-
-//       float: left;
-//       margin-top: 160px;
-//       margin-left: 100px;
-//       width: 365px;
-//       height: 365px;
-//       border-radius: 50%;
-//     }
-
-//   }
-
-// }
