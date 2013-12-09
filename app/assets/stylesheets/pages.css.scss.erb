@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// bootstrap overrides
+
+
+
+
 /* Universal Styles ----------- */
 body {
   margin: 0px;
@@ -30,6 +35,14 @@ h2 {
   font-style: italic;
   font-family: "TimesNewRoman", Serif;
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
 }
 
 .htmlcss {
@@ -63,19 +76,31 @@ h2 {
 @media only screen 
 and (min-width : 1640px) {
 /* Styles */
-  .container {
-    float: left;
+  a.carousel-control.left,
+  a.carousel-control.right {
+    margin-top: 7em;
+    transition: ease-in-out 0.3s;
+    &:hover {
+      background-color: green;
+      transition: ease-in-out 0.3s;
+    }
   }
-  #home {
+
+  #home.active.item {
+    float: left;
+    position: fixed;
     background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
-    background-size: 100%, 100%;
     width: 100%;
-    height: 59.5em;
+    height: 100%;
+    margin-top: -4px;
+    // height: 60em;
+    // height: 100%;
     
-    .home {
+    .title {
       background-color: white;
       margin-top: 19.625em;
       margin-left: 28.33%;
+      // margin-bottom: 19.625em;
       width: 33.33%;
       text-align: center;
       color: black;
@@ -83,39 +108,35 @@ and (min-width : 1640px) {
       opacity: 0.85;
     }
   }
-  #hello {
+
+  div#hello-koala {
     float: left;
+    background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+    background-size: 125%;
     width: 100%;
-    
+    height: 61em;
+    font-family: "Futura", "HelveticaNeue", Sans-serif;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
 
-    div#hello-koala {
-      float: left;
-      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
-      background-size: 125%;
-      width: 50%;
-      height: 32.25em;
-      font-family: "Futura", "HelveticaNeue", Sans-serif;
-      font-style: italic;
-      color: white;
-      text-transform: uppercase;
-
-      .koala.container {
-        width: 100%;
-        padding-top: 4em;
-        padding-bottom: 4em;
-        text-align: center;
-        
-        p {
-          font-size: 1.1em;
-        }
-        h1.letter-spaced {
-          color: yellow;
-          letter-spacing: 0.25em;
-          font-size: 5em;
-          opacity: 0.85;
-        }
+    .koala.container {
+      width: 100%;
+      padding-top: 4em;
+      padding-bottom: 4em;
+      text-align: center;
+      
+      p {
+        font-size: 1.1em;
+      }
+      h1.letter-spaced {
+        color: yellow;
+        letter-spacing: 0.25em;
+        font-size: 5em;
+        opacity: 0.85;
       }
     }
+  }
     div#skills {
       float: left;
       width: 50%;
@@ -160,7 +181,7 @@ and (min-width : 1640px) {
         }
       }
     }
-  }
+  
 
   #contact {
     background-image: url(<%= asset_path 'filmburn-green.jpg' %>);

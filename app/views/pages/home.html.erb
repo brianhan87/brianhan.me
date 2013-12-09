@@ -1,44 +1,70 @@
-<div id="home">
-  <div class="home container">
-    <h1>BRIAN HAN</h1>
-    <h2>web developer &amp; designer</h2>
-  </div>
-</div>
-<div id="hello">
-  <div id="hello-koala">
-    <div class="koala container">
-      <h1 class="letter-spaced">hello</h1>
-      <p>My name is brian han </p>
-      <p>I'm a web developer and designer</p>
-      <p>living in Toronto. I love to build and design</p>
-      <p>web apps and learn new technologies.</p>
-      <p>I'm always working to build better</p>
-      <p>more beautiful user-experiences.</p>      
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+  <!-- carousel-items -->
+  <div class="carousel-inner">
+    <div id="home" class="active item">
+      <div class="home title">
+        <h1>BRIAN HAN</h1>
+        <h2>web developer &amp; designer</h2>
+      </div>
     </div>
+    <!-- <div id="hello-koala" class="active item">
+      <div class="koala container">
+        <h1 class="letter-spaced">hello</h1>
+        <p>My name is brian han </p>
+        <p>I'm a web developer and designer</p>
+        <p>living in Toronto. I love to build and design</p>
+        <p>web apps and learn new technologies.</p>
+        <p>I'm always working to build better</p>
+        <p>more beautiful user-experiences.</p>      
+      </div>
+    </div> -->
+    
   </div>
-  <div id="skills">
-    <div class="skills container">
-      <h1>Skills</h1>
-      <ul>
-        <li><em class="htmlcss">HTML5 &amp; CSS3</em></li>
-        <li><em class="photoshop">Photoshop</em></li>
-        <li><em class="js">JavaScript</em></li>
-        <li><em class="js">jQuery</em></li>
-        <li><em class="js">AJAX</em></li>
-        <li><em class="js">D3.js</em></li>
-        <li><em class="ror">Ruby on Rails 3 &amp; 4</em></li>
-        <li><em class="ror">Object Oriented Programming</em></li>
-        <li><em class="agile">MVC frameworks</em></li>
-        <li><em class="agile">Test driven Development</em></li>
-        <li><em class="agile">Rspec</em></li>
-        <li><em class="git">Git &amp; GitHub</em></li>
-        <li><em class="video">Final Cut Pro 7</em></li>
-        <li><em class="video">Premiere Pro</em></li>
-      </ul>
-    </div>
-  </div>
+  <!-- carousel nav -->
+  <a href="#myCarousel" class="carousel-control left" data-slide="prev">
+    &lsaquo;
+  </a>
+  <a href="#myCarousel" class="carousel-control right" data-slide="next">
+    &rsaquo;
+  </a>
 </div>
-<div id="contact">
+
+
+
+
+
+
+
+<!-- <div id="skills">
+  <div class="skills container">
+    <h1>Skills</h1>
+    <ul>
+      <li><em class="htmlcss">HTML5 &amp; CSS3</em></li>
+      <li><em class="photoshop">Photoshop</em></li>
+      <li><em class="js">JavaScript</em></li>
+      <li><em class="js">jQuery</em></li>
+      <li><em class="js">AJAX</em></li>
+      <li><em class="js">D3.js</em></li>
+      <li><em class="ror">Ruby on Rails 3 &amp; 4</em></li>
+      <li><em class="ror">Object Oriented Programming</em></li>
+      <li><em class="agile">MVC frameworks</em></li>
+      <li><em class="agile">Test driven Development</em></li>
+      <li><em class="agile">Rspec</em></li>
+      <li><em class="git">Git &amp; GitHub</em></li>
+      <li><em class="video">Final Cut Pro 7</em></li>
+      <li><em class="video">Premiere Pro</em></li>
+    </ul>
+  </div>
+</div> -->
+
+<!-- <div id="contact">
   <div class="contact container">
     <h1>CONTACT</h1>
 
@@ -47,23 +73,23 @@
       <p>brianhan87usa@gmail.com</p>
     </div>
   </div>
-</div>
-<div id="links">
-  <div class="links container">
-    <!-- <h1>LINKS</h1> -->
+</div> -->
+<!-- <div id="links">
+  <div class="links container"> -->
+    <!-- <h1>LINKS</h1>
     <ul>
-      <li><%= image_tag 'webicon-facebook.svg' %></li>
-      <li><%= image_tag 'webicon-flickr.svg' %></li>
-      <li><%= image_tag 'webicon-github.svg' %></li>
-      <li><%= image_tag 'webicon-instagram.svg' %></li>
-      <li><%= image_tag 'webicon-linkedin.svg' %></li>
-      <li><%= image_tag 'webicon-tumblr.png' %></li>
-      <li><%= image_tag 'webicon-twitter.svg' %></li>
+      <li><%# image_tag 'webicon-facebook.svg' %></li>
+      <li><%# image_tag 'webicon-flickr.svg' %></li>
+      <li><%# image_tag 'webicon-github.svg' %></li>
+      <li><%# image_tag 'webicon-instagram.svg' %></li>
+      <li><%# image_tag 'webicon-linkedin.svg' %></li>
+      <li><%# image_tag 'webicon-tumblr.png' %></li>
+      <li><%# image_tag 'webicon-twitter.svg' %></li>
     </ul>
   </div>
 </div>
 
-<!-- 
+<! 
 <div id="resume">
   <div class="resume container">
     <h1>Resume</h1>
