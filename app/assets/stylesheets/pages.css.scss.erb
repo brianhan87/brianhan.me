@@ -31,12 +31,27 @@ h2 {
   font-family: "TimesNewRoman", Serif;
   font-size: 20px;
 }
+.container {
+  float: left;
+}
 
 #home {
   background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
   background-size: 100%, 100%;
   width: 100%;
   height: 59.5em;
+}
+
+.home {
+  float: left;
+  background-color: white;
+  margin-top: 19.625em;
+  margin-left: 28.33%;
+  width: 33.33%;
+  text-align: center;
+  color: black;
+  padding: 5%;
+  opacity: 0.85;
 }
 
 .htmlcss {
@@ -70,22 +85,8 @@ h2 {
 @media only screen 
 and (min-width : 1640px) {
 /* Styles */
-  .container {
-    float: left;
-  }
-  #home {
-    
-    .home {
-      background-color: white;
-      margin-top: 19.625em;
-      margin-left: 28.33%;
-      width: 33.33%;
-      text-align: center;
-      color: black;
-      padding: 5%;
-      opacity: 0.85;
-    }
-  }
+
+
   #hello {
     float: left;
     width: 100%;
@@ -226,28 +227,12 @@ and (min-width : 1640px) {
   }
 }
 
-
-
-
 /* Small Screens - Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1434px)
 and (max-width : 1640px) {
 /* Styles */
-  #home {
-    
-    .home.container {
-      background-color: white;
-      float: left;
-      margin-top: 19.625em;
-      margin-left: 28.33%;
-      width: 33.33%;
-      text-align: center;
-      color: black;
-      padding: 5%;
-      opacity: 0.85;
-    }
-  }
+
   #hello {
     // background-color: #ccc;
     float: left;
