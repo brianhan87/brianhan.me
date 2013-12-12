@@ -7,115 +7,69 @@
 <div id="hello">
   <div id="hello-koala">
     <div class="koala container">
-      <h1>hello</h1>
-      <p>My name is brian han </p>
-      <p>I'm a web developer and designer</p>
-      <p>living in Toronto. I love to build and design</p>
-      <p>web apps and learn new technologies.</p>
-      <p>I'm always working to build better,</p>
-      <p>more beautiful user-experiences.</p>      
-    </div>
-  </div>
-  <div id="skills">
-    <div id="my-skills">
-      <div class="skills container">
-        <h1>Skills</h1>
-        <ul>
-          <li><b class="htmlcss">HTML5 &amp; CSS3</b></li>
-          <li><b class="photoshop">Photoshop</b></li>
-          <li><b class="js">JavaScript</b></li>
-          <li><b class="js">jQuery</b></li>
-          <li><b class="js">AJAX</b></li>
-          <li><b class="js">D3.js</b></li>
-          <li><b class="ror">Ruby on Rails 3 &amp; 4</b></li>
-          <li><b class="ror">Object Oriented Programming</b></li>
-          <li><b class="agile">MVC frameworks</b></li>
-          <li><b class="agile">Test driven Development</b></li>
-          <li><b class="agile">Rspec</b></li>
-          <li><b class="git">Git &amp; GitHub</b></li>
-          <li><b class="video">Final Cut Pro 7</b></li>
-          <li><b class="video">Premiere Pro</b></li>
-        </ul>
+      <div class="text"> 
+        <h1>Hello</h1>
+        <div class="paragraph">
+          <small>(even if Starbucks insists that I should be called 'Broyan')</small>
+          <p class="firstline">I'm Brian Han</p>
+          
+          <p>*</p>
+          <p class="secondline">I develop &amp; design for the web.</p>
+          <p>* *</p>
+          <p>Born &amp; raised in toronto</p>
+          <p>I continue to learn new technologies for building</p>
+          <p>better, more beautiful user-experiences.</p>
+          <p>* * *</p>
+          <p>I got my start learning web development at Bitmaker Labs</p>
+          <p>and now I'm making my way as a freelancer</p>
+          <p>continuing to grow as a digital creative.</p>
+        </div> 
+
+        <%= image_tag 'instagram_broyan.jpg' %>
+        <%= image_tag 'instagram_northyork2.jpg' %>
+        <%= image_tag 'instagram_toronto.jpg' %>  
       </div>
-    </div>
-    
+    </div> 
   </div>
 </div>
+<div id="skills">
+  <div id="my-skills">
+    <div class="skills container">
+      <h1>Skills</h1>
+      <ul>
+        <li><b class="htmlcss">HTML5 &amp; CSS3</b></li>
+        <li><b class="photoshop">Photoshop</b></li>
+        <li><b class="js">JavaScript</b></li>
+        <li><b class="js">jQuery</b></li>
+        <li><b class="js">AJAX</b></li>
+        <li><b class="js">D3.js</b></li>
+        <li><b class="ror">Ruby on Rails 3 &amp; 4</b></li>
+        <li><b class="ror">Object Oriented Programming</b></li>
+        <li><b class="agile">MVC frameworks</b></li>
+        <li><b class="agile">Test driven Development</b></li>
+        <li><b class="agile">Rspec</b></li>
+        <li><b class="git">Git &amp; GitHub</b></li>
+        <li><b class="video">Final Cut Pro 7</b></li>
+        <li><b class="video">Premiere Pro</b></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div id="contact">
   <div class="contact container">
     <h1>CONTACT</h1>
-
-    <div class="whitebox">
-      <p>+1 647 909 5759</p>
-      <p>brianhan87usa@gmail.com</p>
-    </div>
+    <p>*</p>
+    <p>+1 647 909 5759</p>
+    <p>* *</p>
+    <p>brianhan87usa@gmail.com</p>
+    <p>* * * </p>
   </div>
-</div>
-<div id="links">
-  <div class="links container">
-    <!-- <h1>LINKS</h1> -->
-    <ul>
-      <li><%= image_tag 'webicon-facebook.svg' %></li>
-      <li><%= image_tag 'webicon-flickr.svg' %></li>
-      <li><%= image_tag 'webicon-github.svg' %></li>
-      <li><%= image_tag 'webicon-instagram.svg' %></li>
-      <li><%= image_tag 'webicon-linkedin.svg' %></li>
-      <li><%= image_tag 'webicon-tumblr.png' %></li>
-      <li><%= image_tag 'webicon-twitter.svg' %></li>
-    </ul>
-  </div>
+  <ul class="links">
+    <li><%= link_to "github", "https://github.com/brianhan87" %></li>
+    <li><%= link_to "linkedin", "http://www.linkedin.com/pub/brian-han/2b/ba4/105" %></li>
+    <li><%= link_to "twitter", "https://twitter.com/brianhan87" %></li>
+    <li><a class="top" href="#home">^</a></li>
+  </ul>
 </div>
 
-<!-- 
-<div id="resume">
-  <div class="resume container">
-    <h1>Resume</h1>
-    <hr />
-    <h3>
-      I'm always looking for great people 
-      to work with and new problems to solve.</h3>  
-
-    <h3><b>Education</b></h3>
-    <ul>
-      <li>Bitmaker Labs
-        <ul>
-          <li>a nine-week program dedicated to learning full stack web development.</li>
-        </ul>
-      </li>
-      <br />
-      <li>Ryerson University
-        <ul>
-          <li>Bachelor of Journalism, TV &amp; Radio</li>
-        </ul>
-      </li>
-    </ul>
-    <h3><b>Volunteer</b></h3>
-    <ul>
-      <li>Bit-by-Bit Podcast
-        <ul>
-          <li>Original Co-Host</li>
-        </ul>
-      </li>
-      <br />
-      <li>Videographer &amp; Photographer
-        <ul>
-          <li>Schools Without Borders</li>
-          <li>Lifeway Community Church</li>
-          <li>Psalms 91:1 Accessories</li>
-        </ul>
-      </li>
-    </ul>
-    <h3><b>Work</b></h3>
-    <ul>
-      <li>Entron Systems USA / Technical Sales - Assistant Manager</li>
-    </ul>
-  </div>
-</div>
-<div id="contact">
-  <div class="contact container">
-    <h1>Contact</h1>
-    <hr />
-    <h3>Let's talk ideas and build something awesome together!</h3>    
-  </div>
-</div>
- -->
